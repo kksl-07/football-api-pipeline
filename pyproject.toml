@@ -16,7 +16,8 @@ dependencies = [
     "pyathena",
     "pyarrow",
     "pytest",
-    "jupyter"
+    "jupyter",
+    "pydantic"
 ]
 classifiers = [
     "Intended Audience :: Developers",

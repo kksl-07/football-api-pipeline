@@ -4,6 +4,11 @@ install: ## Install the virtual environment and install the pre-commit hooks
 	@uv sync
 	@uv run pre-commit install
 
+.PHONY: update
+update: ## Resolve all dependencies of the project and write the exact versions into uv.lock
+	@echo "🚀 Updating virtual environment and uv.lock based on pyproject.toml"
+	@uv sync
+
 .PHONY: check
 check: ## Run code quality tools.
 	@echo "🚀 Checking lock file consistency with 'pyproject.toml'"
